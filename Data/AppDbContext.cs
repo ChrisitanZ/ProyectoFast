@@ -20,7 +20,8 @@ public class AppDbContext :DbContext
         
         builder.Entity<Usuario>().ToTable("Usuario");
         builder.Entity<Usuario>().HasKey(u => u.Id);
-        builder.Entity<Usuario>().Property(u => u.Nombre).IsRequired().HasMaxLength(100);
+        builder.Entity<Usuario>().Property(u => u.Nombres).IsRequired().HasMaxLength(100);
+        builder.Entity<Usuario>().Property(u => u.Apellidos).IsRequired().HasMaxLength(100);
         builder.Entity<Usuario>().Property(u => u.Email).IsRequired().HasMaxLength(100);
         builder.Entity<Usuario>().Property(u => u.Password).IsRequired().HasMaxLength(100);
         

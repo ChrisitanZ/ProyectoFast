@@ -5,7 +5,7 @@ namespace ProyectoFasr.repository;
 public interface IUsuarioRepository
 {
    
-    Usuario ObtenerUsuarioPorId(string id);
+    Usuario ObtenerUsuarioPorId(int id);
 
     
     IEnumerable<Usuario> ObtenerTodosLosUsuarios();
@@ -14,5 +14,5 @@ public interface IUsuarioRepository
     
     void ActualizarUsuario(Usuario usuario);
     
-    void EliminarUsuario(string id);
+    void EliminarUsuario(int id);
 }

@@ -5,7 +5,7 @@ namespace ProyectoFasr.repository;
 public interface ITransaccionRepository
 {
    
-    IEnumerable<Transaccion> ObtenerTransaccionesPorUsuario(string usuarioId);
+    IEnumerable<Transaccion> ObtenerTransaccionesPorUsuario(int usuarioId);
 
     
     Transaccion ObtenerTransaccionPorId(int id);

@@ -12,7 +12,7 @@ public class TransaccionRepository : ITransaccionRepository
         _context = context;
     }
 
-    public IEnumerable<Transaccion> ObtenerTransaccionesPorUsuario(string usuarioId)
+    public IEnumerable<Transaccion> ObtenerTransaccionesPorUsuario(int usuarioId)
     {
         return _context.Transacciones
             .Where(t => t.UsuarioId == usuarioId)

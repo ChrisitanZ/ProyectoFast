@@ -7,6 +7,6 @@ public class Transaccion
     public DateTime Fecha { get; set; }
     public string Categoria { get; set; }
     public string Descripcion { get; set; }
-    public string UsuarioId { get; set; }
+    public int UsuarioId { get; set; }
     public Usuario Usuario { get; set; }
 }

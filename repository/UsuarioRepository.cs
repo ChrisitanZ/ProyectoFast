@@ -12,7 +12,7 @@ public class UsuarioRepository : IUsuarioRepository
         _context = context;
     }
 
-    public Usuario ObtenerUsuarioPorId(string id)
+    public Usuario ObtenerUsuarioPorId(int id)
     {
         return _context.Usuarios
             .FirstOrDefault(u => u.Id == id);
@@ -35,7 +35,7 @@ public class UsuarioRepository : IUsuarioRepository
         _context.SaveChanges();
     }
 
-    public void EliminarUsuario(string id)
+    public void EliminarUsuario(int id)
     {
         var usuario = ObtenerUsuarioPorId(id);
         if (usuario != null)
