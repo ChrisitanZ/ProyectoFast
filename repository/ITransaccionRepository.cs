@@ -12,4 +12,5 @@ public interface ITransaccionRepository
     void AgregarTransaccion(Transaccion transaccion);
     void ActualizarTransaccion(Transaccion transaccion);
     void EliminarTransaccion(int id);
+    IEnumerable<Transaccion> ObtenerTransacciones();
 }

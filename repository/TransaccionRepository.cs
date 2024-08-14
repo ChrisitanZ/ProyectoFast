@@ -46,4 +46,9 @@ public class TransaccionRepository : ITransaccionRepository
             _context.SaveChanges();
         }
     }
+
+    public IEnumerable<Transaccion> ObtenerTransacciones()
+    {
+        return _context.Transacciones.ToList();
+    }
 }
